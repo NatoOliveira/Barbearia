@@ -56,6 +56,24 @@ body{
     color: #000; /* Cor do texto */
 }
 
+/* Configuração para quando o mouse passar no item/link */
+.item_da_lista:hover {
+    color: #990606;
+}
+
+/* Configuração do botão para o menu mobile */
+.botão_mobile{
+    font-size: 20px;
+	color: #000;
+	cursor: pointer;
+    /*display: none;*/
+}
+
+/* Caixa do checkbox */
+#check{
+    display: none;
+}
+
 /* CSS DO NAVBAR - FIM (HEADER)*/
 
 
@@ -98,4 +116,44 @@ body{
     font-size: 1.1em; /* Tamanho da fonte do texto */
     font-family: 'Cinzel', serif; /* Fonte da letra */
     max-width: 400px; /* Tamanh máximo para o texto*/ 
+}
+
+
+
+
+/* MOBILE*/
+
+
+@media (max-width: 700px){
+
+
+.botão_mobile {
+	display:block;
+}
+.links_do_menu{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	top: 80px;
+	left: -100%;
+	text-align: center;
+	transition: all .5s;
+}
+nav ul li{
+	display: block;
+	margin: 50px 0;
+	line-height: 30px;
+}
+nav ul li a {
+	font-size: 20px;
+}
+a:hover, a.active {
+	background: none;
+	color: #000;
+}
+#check:checked ~ ul {
+	left: 0;
+}
+
 }
