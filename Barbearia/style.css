@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap'); /* importação da fonte para o título */
+
+
+/* RESET do CSS padrão do navegador */
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+}
+
+
+/* Configurações gerais do BODY da página */
+body{
+    background-image: linear-gradient(180deg, rgb(252, 249, 249), rgb(32, 32, 31)); /* Cor de fundo com degrader */
+    height: 100vh; /* Comando para o fundo cobrir 100% do conteudo */
+    color: #fff; /* Cor dos componentes */
+    font-family: arial; /* Comando para mudar a fonte */
+}
+
+
+
+/* CSS DO NAVBAR - INICIO (HEADER)*/
+
+/* Configurações do logo */
+.imagem_logo{
+    height: 4em; /* Tamanho do logo (vertical) */
+    width: auto; /* Tamanho do logo (horizontal) */
+}
+
+/* Organização de todos os componetens PAI do HEADER */
+.cabeçalho_principal{
+    padding-top: 6px; /* Distância do topo */
+    padding-bottom: 6px; /* Distância para baixo */
+    display: flex; /* Inicialização do FLEXBOX */
+    flex-direction: row; /* Para o FLEXBOX alinhas os itens em linha (horizontal) */
+    justify-content: space-around; /* Organização dos itens no espaço */
+    align-items: center; /* Alinhamento dos itens no eixo inverso do FLEX-DIRECTION */
+}
+
+/* Organização de todos os links do menu */
+.links_do_menu{
+    font-size: 1.1em; /* Tamanho da fonte */
+    font-family: 'Cinzel', serif; /* Fonte da letra */
+    display: flex; /* Inicialização do FLEXBOX */
+    flex-direction: row; /* Para o FLEXBOX alinhas os itens em linha (horizontal) */
+    justify-content: space-around; /* Organização dos itens no espaço */
+    gap: 1em; /* Espaçamento entre os itens */
+    align-items: center; /* Alinhamento dos itens no eixo inverso do FLEX-DIRECTION */
+}
+
+/* Pradonização de todos os links do menu */
+.item_da_lista{
+    text-decoration: none; /* Comando para remover qualquer decoração no texto */
+    color: #000; /* Cor do texto */
+}
+
+/* CSS DO NAVBAR - FIM (HEADER)*/
+
+
+
+/* CSS DA APRESENTAÇÃO DO CONTEÚDO - INICIO (MAIN)*/
+
+/* Configuração da imagem principal do home */
+.imagem_principal_home{
+    height: 360px; /* Tamanho da imagem (vertical) */
+    width: auto; /* Tamanho da imagem (horizontal) */
+}
+
+/* Configuração da apresentação principal) */
+.Conteudo_principal{
+    display: flex; /* Inicialização do FLEXBOX */
+    flex-direction: row; /* Para o FLEXBOX alinhas os itens em linha (horizontal) */
+    flex-wrap: wrap-reverse; /* Comando para fazer os itens se adaptarem ao espaço */
+    justify-content: space-around; /* Organização dos itens no espaço */
+    align-items: center; /* Alinhamento dos itens no eixo inverso do FLEX-DIRECTION */
+    border-top: #000 solid 1px; /* Borda superior do conteúdo principal */
+}
+
+/* Configuração do título Principal do home */
+.Apresentação{
+    color: #000;
+    display: flex; /* Inicialização do FLEXBOX */
+    flex-direction: column; /* Para o FLEXBOX alinhas os itens em coluna (vertical) */
+    justify-content: flex-start; /* Organização dos itens no espaço */
+    padding-left: 10px; /* Espaçamento da esquerda para afastar do canto */
+}
+
+/* Configuração do título principal */
+.Titulo_principal{
+    font-size: 2.3em; /* Tamanho da fonte do título principal */
+    font-family: 'Cinzel', serif; /* Fonte da letra */
+}
+
+/* Configuração do texto de apresentaçao */
+.Texto_de_apresentação{
+    font-size: 1.1em; /* Tamanho da fonte do texto */
+    font-family: 'Cinzel', serif; /* Fonte da letra */
+    max-width: 400px; /* Tamanh máximo para o texto*/ 
+}
